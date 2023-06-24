@@ -1,0 +1,19 @@
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
+.v-list-item__prepend > .v-icon{
+    margin-inline-end: 8px !important;
+}
+.v-navigation-drawer__content .v-list-group__items .v-list-item{
+   padding-left: 30px !important;
+}
+
+.v-navigation-drawer__content .v-card--variant-elevated{
+    box-shadow: unset !important;
+}
+.sidebar a.v-list-item-title{
+    text-decoration: none !important;
+}
+.sidebar .v-list-group__items .v-list-item{
+    min-height: 40px !important;
+}

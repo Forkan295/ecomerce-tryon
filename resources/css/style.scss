@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.auth_wrapper {
+    background-color: #f4f5fa;
+    position: relative;
+    z-index: 1;
+    min-block-size: calc(var(--vh, 1vh) * 100);
+    .login_section {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .heading_section {
+            .brand_logo {
+                width: 50px;
+                height: 50px;
+                display: inline-block !important;
+            }
+            .title {
+                font-size: 20px;
+                color: #534f5a;
+                text-transform: capitalize;
+            }
+        }
+        .v-checkbox .v-selection-control {
+            min-height: 10px !important;
+        }
+    }
+    .auth_footer_mask {
+        position: absolute;
+        inset-block-end: 0;
+        min-inline-size: 100%;
+        z-index: -1;
+        background: url("../images/auth-v1-mask-light.png") no-repeat center;
+        background-size: cover;
+        height: 250px;
+    }
+    .bottom_sh {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 600px;
+        z-index: 0;
+    }
+    .auth_footer_start_tree,
+    .auth_footer_end_tree {
+        position: absolute;
+        z-index: 1;
+    }
+    .auth_footer_start_tree {
+        inset-block-end: 0;
+        inset-inline-start: 0;
+    }
+    .auth_footer_end_tree {
+        inset-block-end: 0;
+        inset-inline-end: 0;
+    }
+    .v-btn {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background: transparent;
+        text-transform: capitalize !important;
+    }
+    .v-btn.sign_in {
+        color: rgb(98, 9, 182);
+        border: 1px solid rgb(182, 182, 182);
+        border-radius: 6px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: rgba(98, 9, 182, 0.8);
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            color: white;
+            border: 1px solid rgba(182, 182, 182, 0);
+        }
+    }
+    .v-checkbox label {
+        font-size: 14px;
+    }
+    .v-btn.btn_forget {
+        font-size: 12px;
+    }
+    .v-btn.btn_forget,
+    .v-btn.btn_sign_up {
+        opacity: 1;
+        &:hover {
+            color: #ab47bc !important;
+        }
+    }
+}
